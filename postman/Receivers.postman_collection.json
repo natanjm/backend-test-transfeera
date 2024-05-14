@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "4cef6bfa-ed59-4dbe-9d74-fcd1b96d5c35",
+		"name": "Receivers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28311086",
+		"_collection_link": "https://lunar-moon-181222.postman.co/workspace/Transfeera-Test~519f0e51-089f-45ba-b0e1-d2bc84452367/collection/28311086-4cef6bfa-ed59-4dbe-9d74-fcd1b96d5c35?action=share&source=collection_link&creator=28311086"
+	},
+	"item": [
+		{
+			"name": "Add Receier",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Safira Erbes\",\n    \"email\": \"serbes@gmil.com\",\n    \"cpfOrCnpj\": \"92940093000152\",\n    \"pixKeyType\": \"TELEFONE\",\n    \"pixKey\": \"5551999213232\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/api/receivers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"receivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Receivers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ids\": [\n        \"6642b9a3d6a72a57eb1d0f01\",\n        \"663fd2882b4c41c21e886fe4\",\n        \"664006133ba8d50acd8cd19e\",\n        \"664011ac3ba8d50acd8cd19f\",\n        \"664011ae3ba8d50acd8cd1a0\",\n        \"664011af3ba8d50acd8cd1a1\",\n        \"664011b13ba8d50acd8cd1a2\",\n        \"664011b23ba8d50acd8cd1a3\",\n        \"664011b33ba8d50acd8cd1a4\",\n        \"664011b33ba8d50acd8cd1a5\",\n        \"664011b43ba8d50acd8cd1a6\",\n        \"664011b53ba8d50acd8cd1a7\",\n        \"664011b53ba8d50acd8cd1a8\",\n        \"664011b63ba8d50acd8cd1a9\",\n        \"664011b73ba8d50acd8cd1aa\",\n        \"664011b73ba8d50acd8cd1ab\",\n        \"664011b83ba8d50acd8cd1ac\",\n        \"664011b93ba8d50acd8cd1ad\",\n        \"664011ba3ba8d50acd8cd1ae\",\n        \"664011bb3ba8d50acd8cd1af\",\n        \"664011bd3ba8d50acd8cd1b0\",\n        \"664011be3ba8d50acd8cd1b1\",\n        \"664011bf3ba8d50acd8cd1b2\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/api/receivers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"receivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Receivers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"page\": 1,\n    \"pixKey\": \"12\",\n    \"name\": \"son\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/api/receivers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"receivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Receiver",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/receivers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"receivers",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
